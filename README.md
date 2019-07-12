@@ -40,11 +40,16 @@ All the dataset are stored in a dataset directory
  
       
   To get result execute the following script from the command line:
+  
     python main.py file_name planning_type
+    
     Inputs:
+    
       (1) file_name: name of files containing control points e.g., "white.txt","eastesker.txt"
       (2) planning_type: "own" or "other" tells whehter the path costs are taken according to the original planning or                                 according to the planning for someone else
+     
      Outputs:
+     
      (1) Image of the map with the corresponding optimal path represented by red line. The controls are represnted by the            black lines
      (2) Path cost: Total cost to reach destination (in seconds)
      (3) Execution time (in seconds)
