@@ -25,7 +25,7 @@ Similarly, for the Score-O, we are given two ﬁles: control points correspondin
       h(n) is heuristic estimated cost function from given point to destination
       Detail calculation of each parameter is described in a writeup 
    ## Score-O Event:
-      In this case, we use the [Held-Karp algorithm]. Help-Karp approach is the dynamic programming approach to ﬁnd the optimal route  in the given set of points. We ﬁrst compute the heuristic cost function from the one control point to another. Note that the heuristic cost function is asymmetric between pair of nodes. Then, we pass the adjacency matrix to the Held-Karp, which returns the optimal sequence of the control points to visit.After getting the order of the control points to visit, we follow the procedure same as that of the Classic Event.
+      In this case, we use the Held-Karp algorithm. Help-Karp approach is the dynamic programming approach to ﬁnd the optimal route  in the given set of points. We ﬁrst compute the heuristic cost function from the one control point to another. Note that the heuristic cost function is asymmetric between pair of nodes. Then, we pass the adjacency matrix to the Held-Karp, which returns the optimal sequence of the control points to visit.After getting the order of the control points to visit, we follow the procedure same as that of the Classic Event.
       
 # Implementation:
  Implementation is performed into the Python3. Imported library includes colormap, sys, queue, PIL, numpy, math, and random.
