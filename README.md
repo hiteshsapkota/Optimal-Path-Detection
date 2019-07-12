@@ -16,6 +16,7 @@ For the terrain factor refer to the writup.pdf file
 
 For the Classic event testing, we are given a three text ﬁles: white, brown, and red. Each file has a 'classic' text in the first line. From the second line set of control points are provided in the form of (x, y).
 Similarly, for the Score-O, we are given two ﬁles: control points corresponding to a nice hilly area (eastesker.txt), and the control points representing all over the park (allpark.txt). Each file has: (1) 'ScoreO' text in the first line, (2) maximum allowed time (ms) in the second line, and (3) sequence of control points to be visited starting from the third line.
+All the dataset are stored in a dataset directory
 
 # Approach
   ## Classic Event: 
@@ -36,6 +37,7 @@ Similarly, for the Score-O, we are given two ﬁles: control points correspondin
      I is same as that of the other_optimal_path.py except heuristic costs are according to my first planning
   3. travelling_salesman.py:
       Herd-Kard algorithm to determine the order of controls to visit.
+ 
       
   To get result execute the following script from the command line:
     python main.py file_name planning_type
